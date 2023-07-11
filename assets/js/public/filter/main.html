@@ -1,0 +1,31 @@
+
+
+<form action="" class="filterOptions" method="GET">
+  <label for="sortBy">
+    <span>Ordenar Por <br></span>
+    <select name="sort" data-type="sortBy" class="sortBy" id="sortBy">
+      <option value="">Selecciona una opcion</option>
+      <option value="ASC">Ascendente</option>
+      <option value="DESC">Descendente</option>
+      <option value="maxPrice">Precio mas alto</option>
+      <option value="minPrice">Precio mas bajo</option>
+    </select>
+  </label>
+  
+  <div data-type="selectedCategory" id=""></div>
+  
+  <label for="priceRange" id="">
+    <span>Precio minimo</span>
+    <input type="range" id="priceRange" value="0" name="minPrice">
+    <span id="rangeValue">1.000</span>
+  </label>
+  
+  <label for="priceRange" id="">
+    <span>Precio maximo</span>
+    <input type="range" id="priceRange" value="0" name="maxPrice">
+    <span id="rangeValue">1.000</span>
+  </label>
+  
+  <button data-type="categories" class="global-button global-button-blue">Categorias</button>
+  <button class="global-button global-button-black" data-type="applyFilters">Aplicar</button>
+</form>

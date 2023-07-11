@@ -1,0 +1,42 @@
+.global-button {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: all 0.3s;
+}
+
+.global-button-blue:not(:disabled) {
+  background-color: var(--blue);
+}
+
+.global-button-blue:disabled {
+  background-color: var(--light-blue);
+  opacity: 0.6;
+  cursor: no-drop;
+}
+
+.global-button-blue:hover {
+  background-color: var(--light-blue);
+}
+
+.global-button-black:not(:disabled) {
+  background-color: black;
+}
+
+
+.global-button-black:disabled {
+  background-color: var(--dusky);
+  opacity: 0.6;
+  cursor: no-drop;
+}
+
+.global-button-black:hover {
+  background-color: var(--dark-dusky);
+}

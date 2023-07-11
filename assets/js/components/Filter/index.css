@@ -1,0 +1,73 @@
+.filterDesign {
+  position: fixed;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 75vh;
+  margin-top: 5%;
+  width: 20%;
+  border-right: 1px black solid;
+  padding-right: 5%;
+  padding-left: 3%;
+  z-index: 4;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+#hideFilter:checked~section.filterDesign {
+  transform: translateX(-120%);
+}
+
+.hideFilter {
+  position: fixed;
+  top: 15%;
+  left: 28%;
+  font-size: x-large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--duskyV2);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 500ms;
+  z-index: 5;
+}
+
+.hideFilter:hover {
+  background-color: var(--light-duskyV2);
+}
+
+#hideFilter:checked~.hideFilter {
+  transform: rotate(180deg);
+  left: 2%;
+}
+
+@media (max-width: 800px) {
+
+  .filterDesign {
+    top: 5%;
+    margin-top: 5%;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--light-duskyV2);
+    padding: 2%;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .hideFilter {
+    top: 5%;
+    left: 85%;
+    transition: all 0.5 ease-in-out;
+  }
+
+  #hideFilter:checked~section.filterDesign {
+    transform: translateX(-190%);
+  }
+
+}

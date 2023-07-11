@@ -1,0 +1,44 @@
+main > .container{
+  padding: 30px 0;
+}
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('../images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
+  opacity: .8;
+}
+
+/* #mainImg{
+  height: 200px !important;
+} */
+
+.categoryType {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 40vh;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+.categoryType label {
+  padding: 1%;
+  border-radius: 10%;
+  color: white;
+  background-color: var(--blue);
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+
+.categoryType label:hover {
+  background-color: var(--dark-blue);
+}

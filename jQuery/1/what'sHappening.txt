@@ -1,0 +1,4 @@
+Al momento aapretar "getData" el metodo $.ajax hace una peticion con el metodo "url".
+En caso satisfactorio la peticion retorna unos datos y con el metodo each itero sobre
+cada uno, luego selecciono el div con el id result y pego el html generado.
+En caso de error el programa retorna una alerta.

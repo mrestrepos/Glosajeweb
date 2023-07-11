@@ -1,0 +1,31 @@
+
+.filterOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+select.sortBy {
+  padding: 3%;
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  margin-top: 10%;
+  color: var(--gray);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+select.sortBy:hover {
+  color: black;
+}
+
+select.sortBy:focus {
+  border-top: 1px solid black;
+  color: black;
+}
+
+#rangeValue {
+  color: var(--green);
+  width: 100%;
+}

@@ -1,0 +1,31 @@
+:root {
+  --green: rgb(29, 210, 29);
+  --dusky: rgba(0, 0, 0, 0.2);
+  --duskyV2: rgb(42, 41, 39);
+  --light-duskyV2: rgb(61, 59, 56);
+  --dark-dusky: rgb(50, 49, 49);
+  --blue: #396cd8;
+  --light-blue: #5083f1;
+  --dark-blue: #1f3d7d;
+  --light: #e8e8e8;
+  --gray: #969892;
+  --radius: 7px;
+  --danger: brown;
+}
+
+@keyframes hoverButton {
+  from {
+    border: 1px black solid;
+  }
+
+  to {
+    border: 1px var(--gray) solid;
+  }
+}
+
+.hoverAnimation:hover {
+  /* color: var(--dark-dusky); */
+  transition: all 0.5s;
+  animation: hoverButton infinite 0.5s ease-in-out;
+  animation-direction: alternate;
+}
